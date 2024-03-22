@@ -1,6 +1,6 @@
 import "./App.css";
-import PhotoKushal from "./assets/PhotoKushal.png";
-import Project1 from "./assets/project1.png";
+import PhotoKushalCircular from "./assets/PhotoKushalCircular.png";
+import Adaptpage from "./assets/Adaptpage.png";
 import Project2 from "./assets/project2.png";
 import Project3 from "./assets/project3.png";
 import Project4 from "./assets/project4.png";
@@ -11,10 +11,9 @@ import ArrowDown from "./assets/arrow-down.svg";
 import { useEffect, useState } from "react";
 
 function App() {
-
   function downloadResume() {
     // Assuming your resume file is named "resume.pdf"
-    const resumeUrl = "./assets/KushalJainResume.pdf";
+    const resumeUrl = "./assets/KushalJainResume[FSD].pdf";
 
     // Create a hidden link element
     const link = document.createElement("a");
@@ -102,14 +101,14 @@ function App() {
               <h2 className="font-bold text-4xl">Hello, I'm Kushal,</h2>
               <div>
                 <h2 className="font-bold text-4xl mt-1 gradiant-text">
-                  Frontend developer.
+                  Full stck developer.
                 </h2>
               </div>
               <div>
                 <p className="mt-4 text-gray-400">
-                  An amitious and proactive masters student, seeking to apply competent
-                  development skills with focus on collaboration and technical
-                  excellence.
+                  An amitious and proactive software developer, seeking to apply
+                  competent development skills with focus on collaboration and
+                  technical excellence.
                 </p>
                 <button
                   className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
@@ -122,7 +121,7 @@ function App() {
             <div className="relative">
               <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
                 <img
-                  src={PhotoKushal}
+                  src={PhotoKushalCircular}
                   className="relative z-10 w-[280px] m-auto sm:w-[600px]"
                 />
               </div>
@@ -135,21 +134,27 @@ function App() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project1} className="w-full h-auto" />
+                <img src={Adaptpage} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
-                  Furniture store landing page
+                  Doctor Consultation booking web application.
                 </h3>
                 <p className="text-gray-400 text-sm mt-2">
-                  Responsive HTML/CSS layout for online furniture store. HTML5,
-                  CSS3 (SCSS)
+                  Responsive ,Dynamic web app buit using Reactjs and
+                  TailwindCSS.
                 </p>
                 <div className="flex mt-12 gap-2">
-                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                  <button
+                    className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"
+                    onClick={() =>
+                      window.open("https://adaptwellness.in/", "_blank")
+                    }
+                  >
                     Live preview
                   </button>
-                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+
+                  {/* <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
                     Checkout github
-                  </button>
+                  </button> */}
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
@@ -214,16 +219,9 @@ function App() {
         {/* Technoglies section */}
         <section className="py-10" id="technologies">
           <div className="container m-auto px-4">
-            <h2 className="text-2xl font-semibold">Technologies</h2>
+            <h2 className="text-2xl font-semibold">My Tech stack</h2>
             <div className="mt-14">
               <div>
-                <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">React</h2>
-                  <p className="text-gray-500">Advanced</p>
-                </div>
-                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-              </div>
-              <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">JavaScript</h2>
                   <p className="text-gray-500">Advanced</p>
@@ -232,7 +230,14 @@ function App() {
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">TailwindCSS</h2>
+                  <h2 className="font-semibold">React.js</h2>
+                  <p className="text-gray-500">Advanced</p>
+                </div>
+                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Node.js</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -246,24 +251,38 @@ function App() {
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">Python</h2>
+                  <h2 className="font-semibold">TailwindCSS</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
-                <span className="w-[60%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">Node.js</h2>
+                  <h2 className="font-semibold">MongoDB and Mongoose</h2>
+                  <p className="text-gray-500">Advanced</p>
+                </div>
+                <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div>
+              <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">Python</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
+              {/* <div className="mt-8">
+                <div className="flex justify-between items-center">
+                  <h2 className="font-semibold">TailwindCSS</h2>
+                  <p className="text-gray-500">Advanced</p>
+                </div>
+                <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+              </div> */}
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">Material UI</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
-                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[60%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
             </div>
           </div>
@@ -277,7 +296,17 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Git
+                  Git & Github
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  Rest APis
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  GraphQL
                 </p>
               </div>
               <div>
@@ -287,7 +316,7 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Figma
+                  AWS
                 </p>
               </div>
               <div>
@@ -299,7 +328,7 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-36 mt-4 sm:mt-6 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Teamwork and active collaboration
+                  Postman
                 </p>
               </div>
               <div>
@@ -309,7 +338,22 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  AWS
+                  Figma
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  JIRA
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  Agile project managment
+                </p>
+              </div>
+              <div>
+                <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
+                  Collabration
                 </p>
               </div>
             </div>
@@ -322,9 +366,12 @@ function App() {
               <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2019</h3>
                 <p>
-                {/* I started my Bachelors of Engineering in India. I got introduced to HTML, CSS, and JavaScript programming while working on a technical team for a university fest.
+                  {/* I started my Bachelors of Engineering in India. I got introduced to HTML, CSS, and JavaScript programming while working on a technical team for a university fest.
                 Developed an interest in software development and thus began the journey of exploration. I started learning React.js. Developed numerous projects to increase my knowledge.  */}
-Started Bachelors in Engineering in India. Discovered HTML, CSS, and JavaScript while on a university fest's tech team. Sparked interest in software development, leading to learning React.js. Completed various projects for hands-on experience.
+                  Started Bachelors in Engineering in India. Discovered HTML,
+                  CSS, and JavaScript while on a university fest's tech team.
+                  Sparked interest in software development, leading to learning
+                  React.js. Completed various projects for hands-on experience.
                 </p>
               </div>
               {/* <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
@@ -335,26 +382,30 @@ Started Bachelors in Engineering in India. Discovered HTML, CSS, and JavaScript 
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2021</h3>
                 <p>
-                  Started working as a Design Engineer for KION Group AG,Frankfurt-Germany.
+                  Started working as a Design Engineer for KION Group
+                  AG,Frankfurt-Germany.
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
                 <p>
                   Worked out in which field I want to build a developer's career
-                  and started an Internship in Frotend Developement. Further, increased my experience in React, Javascript, HTML, CSS and TailwindCSS.
+                  and started an Internship in Frotend Developement. Further,
+                  increased my experience in React, Javascript, HTML, CSS and
+                  TailwindCSS.
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
-                <p>
-                  Moved to Germany to persue my Masters.
-                </p>
+                <p>Moved to Germany to persue my Masters.</p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
                 <h3 className="absolute left-0 text-lg font-semibold">2023</h3>
                 <p>
-                  Completed an Internship as an Python Developer. Developed web applications for 2 start-ups which helped me improve my skills as a frontend developer. Started learning backend, Node.js in particular to complement my frontend developemt skills.             
+                  Completed an Internship as an Python Developer. Developed web
+                  applications for 2 start-ups which helped me improve my skills
+                  as a frontend developer. Started learning backend, Node.js in
+                  particular to complement my frontend developemt skills.
                 </p>
               </div>
             </div>
