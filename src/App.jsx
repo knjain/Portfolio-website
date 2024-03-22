@@ -240,7 +240,7 @@ function App() {
                   <h2 className="font-semibold">Node.js</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
-                <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[80%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -261,7 +261,7 @@ function App() {
                   <h2 className="font-semibold">MongoDB and Mongoose</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
-                <span className="w-[70%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[85%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
@@ -301,7 +301,7 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Rest APis
+                  RESTt APis
                 </p>
               </div>
               <div>
